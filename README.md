@@ -25,9 +25,13 @@ COPY_SNAPSHOT_TO=c:\Speccy\_tools\unreal\qsave1.sna     // Path where snapshot s
 COPY_LABELSLIST_TO=c:\Speccy\_tools\unreal\user.l       // Path where labelslist should be placed
 ```
 
+Pay special attention to the slashes! For Windows it should be backslashes (like in example above), for macOS and Linux - forward slashes.
+
 I use these arrangements because this is how UnrealSpeccy work. I prefer to run emulator (or have it already running) and then press `(Quick load)` shortcut to quick load snapshot (that's why I copy snapshot to `qsave1.sna` file). Then if I need to see labels in debugger, I press `CTRL+L` (Show labels) shortcut and UnrealSpeccy shows all the labels from `user.l` file.
 
-If you use another emulator, you should adjust these paths the way you need. Besides that, of course, you should feel free to modify compile scripts at your own.
+Also, if you use another emulator, you should adjust these paths the way you need. Besides that, of course, you should feel free to modify any scripts at your own.
+
+So, this is the way I use. If you make something completely different, that means that you should probably make your own build/compile script (with autopacker, autolinker, trd and tap maker, etc).
 
 4. And this is it! Now you can use `Run build task` (Ctrl+Shift+B on Windows or ⌘+B on macOS by default) to compile your `main.asm` file, and do everything you need with the result.
 
