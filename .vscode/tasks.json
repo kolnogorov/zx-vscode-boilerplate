@@ -1,0 +1,36 @@
+{
+        "version": "2.0.0",
+        "type": "shell",
+        "isBackground": false,
+        "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+        },
+        "problemMatcher": "$errmatcher-sjasmplus",
+        "tasks": [
+                {
+                        "label": "build",
+                        "windows": {
+                                "command": "scripts\\compile.bat",
+                        },
+                        "osx": {
+                                "command": "./scripts/compile.sh",
+                        },
+                        "linux": {
+                                "command": "./scripts/compile.sh",
+                        },
+                        "command": "make build",
+                        "options": {
+                                "cwd": "${workspaceFolder}",
+                        },
+                        "group": {
+                                "kind": "build",
+                                "isDefault": true
+                        }
+                }
+        ]
+}
