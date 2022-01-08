@@ -18,15 +18,16 @@ This boilerplate is intended to be used as easy as possible out-of-the-box.
 ```
 PROJECT_NAME=zxboilerplate                              // Your project name, used to name output files
 
-PATH_TO_SJASMPLUS=tools\sjasmplus.exe                   // Path to sjasmplus, if you use your custom version, feel free to specify your own path
+PATH_TO_SJASMPLUS=tools\sjasmplus.exe                   // Path to sjasmplus
+                                                        // If you use another version, specify your own path
 PATH_TO_AUTORUN=c:\Speccy\_tools\unreal\unreal.exe      // Path to emulator, which is launched after compilation is done
 COPY_SNAPSHOT_TO=c:\Speccy\_tools\unreal\qsave1.sna     // Path where snapshot should be placed
 COPY_LABELSLIST_TO=c:\Speccy\_tools\unreal\user.l       // Path where labelslist should be placed
 ```
 
-I use these arrangements because this is how UnrealSpeccy work. I prefer to run emulator (or have it already running) and then press `F3 (Quick load)` shortcut to quick load snapshot (that's why i copy snapshot to `qsave1.sna` file). Then if I need to see labels in debugger, I press `CTRL+L` and UnrealSpeccy shows all the labels from `user.l` file.
+I use these arrangements because this is how UnrealSpeccy work. I prefer to run emulator (or have it already running) and then press `(Quick load)` shortcut to quick load snapshot (that's why I copy snapshot to `qsave1.sna` file). Then if I need to see labels in debugger, I press `CTRL+L` (Show labels) shortcut and UnrealSpeccy shows all the labels from `user.l` file.
 
-If you use another emulator, you should adjust these path the way you need. Besides that, of course, you should feel free to modify compile scripts at your own.
+If you use another emulator, you should adjust these paths the way you need. Besides that, of course, you should feel free to modify compile scripts at your own.
 
 4. And this is it! Now you can use `Run build task` (Ctrl+Shift+B on Windows or ⌘+B on macOS by default) to compile your `main.asm` file, and do everything you need with the result.
 
