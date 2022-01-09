@@ -4,8 +4,6 @@ ZX Spectrum sjasmplus+vscode boilerplate (with customizable build scripts for Wi
 
 You don't need to install `sjasmplus` and/or `make`, because this boilerplate includes compiled `sjasmplus` binaries both for Windows and macOS and doesn't need `make` as it uses batch/bash scripts for compile, copy output files and run them in emulator.
 
-If you use Linux, you are welcomed to make a pull request for linux build script with a `sjasmplus` compiled binary, it would be very appreciated :)
-
 If you prefer `make`-way build, you should probably better use [nyuk's fork](https://github.com/akanyuk/zxboilerplate) of oisee's zxboilerplate (it is very great and flexible).
 
 This boilerplate is intended to be used as easy as possible out-of-the-box.
