@@ -13,7 +13,7 @@ This boilerplate is intended to be used as easy as possible out-of-the-box.
 ## How to use
 1. Download and install [Visual Studio Code](https://code.visualstudio.com/Download).
 2. Install [Z80 Macro-Assembler extension](https://marketplace.visualstudio.com/items?itemName=mborik.z80-macroasm).
-3. Copy `.env.local` file to `.env` and specify every path you need (remember that `.env` stays in `.gitignore`, so you can work on the same project in team every with his own setup):
+3. Copy corresponding `.env.example-(windows|linux|macos)` file to `.env` and specify every path you need (remember that `.env` stays in `.gitignore`, so you can work on the same project in team every with his own setup):
 
 ```
 PROJECT_NAME=zxboilerplate                              // Your project name, used to name output files
