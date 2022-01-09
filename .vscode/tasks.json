@@ -18,10 +18,10 @@
                                 "command": "scripts\\compile.bat",
                         },
                         "osx": {
-                                "command": "./scripts/compile.sh",
+                                "command": "./scripts/compile-macos.sh",
                         },
                         "linux": {
-                                "command": "./scripts/compile.sh",
+                                "command": "./scripts/compile-linux.sh",
                         },
                         "command": "make build",
                         "options": {
