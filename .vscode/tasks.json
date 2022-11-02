@@ -1,5 +1,5 @@
 {
-        "version": "2.0.0",
+        "version": "2.0.1",
         "type": "shell",
         "isBackground": false,
         "presentation": {
@@ -15,7 +15,7 @@
                 {
                         "label": "build",
                         "windows": {
-                                "command": "scripts\\compile.bat",
+                                "command": "scripts\\compile.bat ${file}",
                         },
                         "osx": {
                                 "command": "./scripts/compile-macos.sh",
